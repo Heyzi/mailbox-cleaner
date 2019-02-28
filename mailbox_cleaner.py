@@ -43,7 +43,7 @@ with open('india.txt') as f:
         try:
             last_wanted = datetime.now() + timedelta(days=-7)
             #print 'Delete older: ' , last_wanted.strftime("%d %B, %Y")
-            M = poplib.POP3('mx25.valuehost.ru')
+            M = poplib.POP3('!pop3_server!')
             print 'mailbox: ', username
             M.user(username)
             M.pass_(password)
